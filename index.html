@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ronen Ben Yaakov</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 1rem;
+        }
+        .container {
+            max-width: 1200px;
+            width: 100%;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            padding: 2rem;
+            text-align: center;
+            height: auto;
+        }
+        header {
+            margin-bottom: 2rem;
+        }
+        header h1 {
+            font-size: 2.5rem;
+            color: #333;
+            margin-bottom: 0.5rem;
+        }
+        header p {
+            font-size: 1.2rem;
+            color: #666;
+        }
+        .bio {
+            font-size: 1rem;
+            color: #555;
+            margin-bottom: 2rem;
+        }
+
+        /* Email and GitHub Links Styling */
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 1.5rem;
+        }
+        .contact-info a {
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #fff;
+            background-color: #007BFF;
+            padding: 0.8rem 1.5rem;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .contact-info a:hover {
+            background-color: #0056b3;
+            color: #fff;
+        }
+
+        /* Projects Section */
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+        }
+        .project-card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+        .project-card:hover {
+            transform: translateY(-3px);
+        }
+        .project-card img {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+        }
+        .project-content {
+            padding: 1rem;
+        }
+        .project-content h3 {
+            font-size: 1.3rem;
+            color: #333;
+            margin-bottom: 0.5rem;
+        }
+        .project-content p {
+            font-size: 1rem;
+            color: #666;
+            margin-bottom: 1rem;
+        }
+        footer {
+            font-size: 1rem;
+            color: #aaa;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <!-- Header Section -->
+    <header>
+        <h1>Ronen Ben Yaakov</h1>
+        <p>AI developer | Full Stack Developer</p>
+    </header>
+
+    <!-- Contact Info Section -->
+    <section class="contact-info">
+        <a href="mailto:ronena72018@gmail.com">Email: ronena72018@gmail.com</a>
+        <a href="https://github.com/ronenBenYaakov" target="_blank">GitHub: ronenBenYaakov</a>
+    </section>
+
+    <!-- Bio Section -->
+    <section class="bio">
+        <p>Hi! I'm Ronen Ben Yaakov, a passionate AI and Full stack developer focused on creating innovative and user-friendly applications powered by AI. Check out some of my top projects below.</p>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects">
+        <div class="project-card">
+            <img src="1605476863463.jpg" alt="Project 1">
+            <div class="project-content">
+                <h3>Chat Positivity App</h3>
+                <p>Multi-server chatroom app that tells the user the toxicity level of the chat.</p>
+            </div>
+        </div>
+        <div class="project-card">
+            <img src="images.jpg" alt="Project 2">
+            <div class="project-content">
+                <h3>Self Driver</h3>
+                <p>Using Computer Vision and Machine learning to teach a model how to drive itself.</p>
+            </div>
+        </div>
+        <div class="project-card">
+            <img src="Flappy_Bird_icon.png" alt="Project 3">
+            <div class="project-content">
+                <h3>Flappy Bird AI</h3>
+                <p>Created a flappy bird game with an automatic AI player that improves its score by 10.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 This Site was created using CSS and HTML</p>
+    </footer>
+</div>
+</body>
+</html>
